@@ -1,0 +1,34 @@
+Problem Statement
+As electric vehicle (EV) adoption surges, urban planners need to anticipate infrastructure needs — especially charging stations.
+Inadequate planning can lead to bottlenecks, impact user satisfaction, and hinder sustainability goals.
+
+This project builds a regression model to forecast future EV adoption demand, based on historical trends in EV growth, vehicle types, and regional (county-level) data.
+
+Goal
+✅ Use the provided dataset to predict the number of electric vehicles (EVs) in future months/years.
+✅ Help urban planners make better decisions about charging infrastructure needs.
+✅ Provide historical vs forecasted EV growth insights at the county level.
+
+Dataset
+We used the dataset published by the Washington State Department of Licensing (DOL) which contains monthly EV registration records.
+Dataset Link:
+🔗 Kaggle Dataset
+
+Features
+Date: End of the month when counts were recorded (2017-01-31 → 2024-02-29)
+County: Region where vehicle owner resides
+State: U.S. state of registration
+Vehicle Primary Use: Passenger (~83%) or Truck (~17%)
+Battery Electric Vehicles (BEVs): Fully electric vehicles
+Plug-In Hybrid Electric Vehicles (PHEVs): Partially electric vehicles
+Electric Vehicle (EV) Total: BEVs + PHEVs
+Non-Electric Vehicle Total: All other vehicles
+Total Vehicles: Sum of all powered vehicles
+Percent Electric Vehicles: Percentage of EVs in total vehicles
+ 
+How to Run
+1️⃣ Clone/download this repository.
+2️⃣ Install dependencies (if not already):
+pip install pandas numpy scikit-learn matplotlib seaborn joblib
+3️⃣ Open the notebook:
+jupyter notebook ev_adoption_forecasting_week2.ipynb
